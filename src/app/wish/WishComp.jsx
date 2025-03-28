@@ -1,37 +1,36 @@
-"use client"
+"use client";
 import { useSearchParams } from "next/navigation";
-import Typewriter from 'typewriter-effect';
-
-
- 
-
+import Typewriter from "typewriter-effect";
 
 export default function WishComp() {
   const searchParams = useSearchParams();
   const nameParam = searchParams.get("name") || "Guest";
   const name = nameParam
-    .split('-')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
 
   return (
     <div className="h-screen min-w-screen bg-black">
       <div className="px-4 z-20 absolute flex flex-col justify-center items-center w-full h-full">
         <h1 className="animate__animated animate__fadeIn animate__delay-2s animate__slow  py-16 text-transparent bg-clip-text bg-gradient-to-r from-white via-green-100 to-white text-3xl text-center font-bold font-[Roboto]">
-        <span className="text-foreground animate-pulse  ">🌙</span> Eid Mubarak  {name}  <span className="text-foreground animate-pulse">✨</span> 
+          <span className="text-foreground animate-pulse  ">🌙</span> Eid
+          Mubarak {name}{" "}
+          <span className="text-foreground animate-pulse">✨</span>
         </h1>
-        
-        
+
         <h1 className=" h-[40%] text-indigo-100/80 from-white via-blue-200 to-white text-4xl text-center font-bold font-[Lobster]">
-          <Typewriter 
+          <Typewriter
             options={{
               delay: 60,
-              deleteSpeed: 1,  // Adjust this value (lower = faster, higher = slower)
+              deleteSpeed: 1, // Adjust this value (lower = faster, higher = slower)
             }}
             onInit={(typewriter) => {
-                typewriter
+              typewriter
                 .pauseFor(3000)
-                .typeString('Wishing you peace this EID  <span className="text-foreground">🌙</span>')
+                .typeString(
+                  'Wishing you peace this EID  <span className="text-foreground">🌙</span>'
+                )
                 .pauseFor(500)
                 .changeDeleteSpeed(1)
                 .deleteChars(7)
@@ -55,7 +54,7 @@ export default function WishComp() {
                 .pauseFor(500)
                 .start();
             }}
-          /> 
+          />
         </h1>
       </div>
 
