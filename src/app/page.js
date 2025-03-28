@@ -15,16 +15,16 @@ export async function generateMetadata(props) {
     openGraph: {
       title: `Eid Wishes for ${name}`,
       description: "Wishing you love, joy & blessings today. 🌙✨", 
-      // images: [
-      //   {
-      //     url: 'https://abc.com/eidog.jpg', // Must be an absolute URL
-      //     width: 800,
-      //     height: 600,
-      //     alt: 'Eid Image',
+      images: [
+        {
+          url: 'https://the-eid-wishes.vercel.app/eidog.jpg', // Must be an absolute URL
+          width: 800,
+          height: 600,
+          alt: 'Eid Image',
 
-      //   },
+        },
 
-      // ],
+      ],
       
     },
   }
