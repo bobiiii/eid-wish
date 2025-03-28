@@ -19,7 +19,7 @@ export async function generateMetadata(props) {
         {
           url: 'https://the-eid-wishes.vercel.app/eidog.jpg', // Must be an absolute URL
           width: 1200,
-          height: 630,
+          height: 628,
           alt: 'Eid Image',
 
         },
