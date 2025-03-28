@@ -1,6 +1,8 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import Typewriter from "typewriter-effect";
+import { Suspense } from 'react'
+
 
 export default function WishComp() {
   const searchParams = useSearchParams();
@@ -11,6 +13,8 @@ export default function WishComp() {
     .join(" ");
 
   return (
+    <Suspense>
+
     <div className="h-screen min-w-screen bg-black">
       <div className="px-4 z-20 absolute flex flex-col justify-center items-center w-full h-full">
         <h1 className="animate__animated animate__fadeIn animate__delay-2s animate__slow  py-16 text-transparent bg-clip-text bg-gradient-to-r from-white via-green-100 to-white text-3xl text-center font-bold font-[Roboto]">
@@ -73,5 +77,6 @@ export default function WishComp() {
         <h3 className="text-lg font-bold">Made with ❤️ by @babar</h3>
       </footer>
     </div>
+    </Suspense>
   );
 }
