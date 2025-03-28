@@ -17,7 +17,7 @@ export async function generateMetadata(props) {
       description: "Wishing you love, joy & blessings today. 🌙✨", 
       images: [
         {
-          url: 'https://the-eid-wishes.vercel.app/eidog.jpg', // Must be an absolute URL
+          url: 'https://the-eid-wishes.vercel.app/eidog2.jpg', // Must be an absolute URL
           width: 1200,
           height: 628,
           alt: 'Eid Image',
