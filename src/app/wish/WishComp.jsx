@@ -13,7 +13,6 @@ export default function WishComp() {
     .join(" ");
 
   return (
-    <Suspense>
 
     <div className="h-screen min-w-screen bg-black">
       <div className="px-4 z-20 absolute flex flex-col justify-center items-center w-full h-full">
@@ -77,6 +76,5 @@ export default function WishComp() {
         <h3 className="text-lg font-bold">Made with ❤️ by @babar</h3>
       </footer>
     </div>
-    </Suspense>
   );
 }
