@@ -3,7 +3,7 @@ import Provider from "@/app/wish/Provider";
 
 export async function generateMetadata(props) {
   const searchParams = await props.searchParams
-  const nameParam = searchParams.name
+  const nameParam = searchParams.name || "Guest"
   const name = nameParam
     .split('-')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
